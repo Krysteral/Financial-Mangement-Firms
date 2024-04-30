@@ -1,0 +1,71 @@
+MariaDB [tgiang]> source milestone3.sql;
++----------------+-----------------+
+| TypeName       | AverageInvested |
++----------------+-----------------+
+| Bonds          |          4875.0 |
+| Cryptocurrency |          2000.0 |
+| Real Estate    |          9500.0 |
+| Stocks         |          2066.7 |
++----------------+-----------------+
+4 rows in set (0.001 sec)
+
++-----------------+---------+
+| User            | Balance |
++-----------------+---------+
+| Isaac Martinez  | 5000.00 |
+| Isaac Martinez  | 7000.00 |
+| Jane Smith      | 4500.00 |
+| Jane Smith      | 3500.00 |
+| Alice Johnson   | 5500.00 |
+| Alice Johnson   | 4000.00 |
+| Bob Brown       | 6000.00 |
+| Charlie Green   | 7000.00 |
+| Diana Prince    | 6500.00 |
+| Diana Prince    | 5000.00 |
+| Fiona Gallagher | 7000.00 |
+| Hannah Abbott   | 6000.00 |
+| Hannah Abbott   | 7500.00 |
++-----------------+---------+
+13 rows in set (0.000 sec)
+
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| User            | TransactionDes                                                                                                                                                                                                                             |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Hannah Abbott   | Freelance Payment, Gardening Supplies, Gas Bill, Gift for Anniversary, Home Decor, Brunch with Friends, Zoo Tickets, Car Rental Payment, Financial Advisory                                                                                |
+| Bob Brown       | Movie Rental, Car Loan Payment, Roof Repair, Marketing Consultation, Lunch Meeting, Theater Tickets, Appliance Repair                                                                                                                      |
+| Fiona Gallagher | Gift, Gift for Graduation, Dinner Party                                                                                                                                                                                                    |
+| Charlie Green   | Grocery Shopping, Electricity Bill, Gift for Birthday                                                                                                                                                                                      |
+| Alice Johnson   | Online Subscription, Online Shopping, Book Purchase, Car Insurance Payment, Software Development, Dinner with Family, Concert Tickets, Home Repairs, Grocery Shopping, Grocery Shopping, Internet Bill, Gift for Colleague, Gym Membership |
+| George King     | Plumbing Repair, Grocery Shopping, Netflix Subscription                                                                                                                                                                                    |
+| Isaac Martinez  | Grocery Shopping, Electronics, Utilities, Water Bill                                                                                                                                                                                       |
+| Diana Prince    | Clothing Purchase, Car Lease Payment                                                                                                                                                                                                       |
+| Jane Smith      | Book Sale, Car Maintenance, Consulting Fee, Dining Out, Movie Tickets, Car Repair, Grocery Shopping, Phone Bill, Gift for Friend                                                                                                           |
+| Evan Wright     | Legal Services, Amusement Park Tickets                                                                                                                                                                                                     |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+10 rows in set (0.000 sec)
+
++----------------------+----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
+| CategoryName         | Descriptions                                                                                       | Users                                                                   |
++----------------------+----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
+| Books                | Book Sale                                                                                          | Jane Smith                                                              |
+| Car Maintenance      | Car Maintenance, Car Repair                                                                        | Jane Smith                                                              |
+| Consulting           | Consulting Fee, Legal Services                                                                     | Evan Wright, Jane Smith                                                 |
+| Dining               | Brunch with Friends, Dining Out, Dinner Party, Dinner with Family, Lunch Meeting                   | Alice Johnson, Bob Brown, Fiona Gallagher, Hannah Abbott, Jane Smith    |
+| Education            | Book Purchase                                                                                      | Alice Johnson                                                           |
+| Electronics          | Electronics, Gift for Anniversary                                                                  | Hannah Abbott, Isaac Martinez                                           |
+| Entertainment        | Amusement Park Tickets, Concert Tickets, Movie Tickets, Theater Tickets, Zoo Tickets               | Alice Johnson, Bob Brown, Evan Wright, Hannah Abbott, Jane Smith        |
+| Gifts                | Gift, Gift for Graduation                                                                          | Fiona Gallagher                                                         |
+| Groceries            | Grocery Shopping                                                                                   | Alice Johnson, Charlie Green, George King, Isaac Martinez, Jane Smith   |
+| Healthcare           | Gym Membership                                                                                     | Alice Johnson                                                           |
+| Home Improvement     | Gardening Supplies, Home Decor, Home Repairs, Plumbing Repair, Roof Repair                         | Alice Johnson, Bob Brown, George King, Hannah Abbott                    |
+| Income               | Appliance Repair, Freelance Payment, Movie Rental                                                  | Bob Brown, Hannah Abbott                                                |
+| Insurance            | Car Insurance Payment                                                                              | Alice Johnson                                                           |
+| Investments          | Financial Advisory, Marketing Consultation                                                         | Bob Brown, Hannah Abbott                                                |
+| Online Subscriptions | Netflix Subscription, Online Subscription                                                          | Alice Johnson, George King                                              |
+| Payments             | Car Lease Payment, Car Loan Payment, Car Rental Payment                                            | Bob Brown, Diana Prince, Hannah Abbott                                  |
+| Shopping             | Clothing Purchase, Gift for Birthday, Gift for Colleague, Gift for Friend, Online Shopping         | Alice Johnson, Charlie Green, Diana Prince, Jane Smith                  |
+| Utilities            | Electricity Bill, Gas Bill, Internet Bill, Phone Bill, Software Development, Utilities, Water Bill | Alice Johnson, Charlie Green, Hannah Abbott, Isaac Martinez, Jane Smith |
++----------------------+----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
+18 rows in set (0.001 sec)
+
+MariaDB [tgiang]> notee;
