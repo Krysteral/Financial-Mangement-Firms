@@ -4,7 +4,7 @@
 		exit;
 	}
 	
-	function new_header($name="Kien Giang", $urlLink="") {
+	function new_header($name="", $urlLink="") {
 		echo "<head>";
 		echo "	<title>$name</title>";
 		//		<!-- Link to Foundation -->";
@@ -18,14 +18,14 @@
 		echo "<nav class='top-bar' data-topbar data-options='sticky_on: large'>";
 		echo "<ul class='title-area'>";
 		echo "<li class='name'>";
-		echo "  <h1 align='left'><a href='/~tgiang/".$urlLink."'>$name</a></h1>";
+		echo "  <h1 align='left'><a href='/~/".$urlLink."'>$name</a></h1>";
 		echo "</li>";
 		echo "</ul>";
 		echo "</nav>";
 		echo "</div>";	
 	}
 
-	function new_footer($name="Kien Giang"){
+	function new_footer($name=""){
 		date_default_timezone_set("America/Chicago");
 		echo "<br /><br /><br />";
 	    echo "<h4><div class='text-center'><small>Copyright {$name} ".date("M Y").", ".$name."</small></div></h4>";
